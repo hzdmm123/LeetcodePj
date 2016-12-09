@@ -16,7 +16,7 @@ public class FizzBuzz412 {
             }else if(i%3==0){
                 ls.add("Fizz");
             }else if (i%5==0){
-                ls.add("Buzz");
+                ls.add("Buzzz");
             }
             ls.add(String.valueOf(i));
         }
