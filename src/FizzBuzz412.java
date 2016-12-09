@@ -18,7 +18,7 @@ public class FizzBuzz412 {
             }else if (i%5==0){
                 ls.add("Buzz");
             }
-            ls.add(Integer.toString(i));
+            ls.add(String.valueOf(i));
         }
         return ls;
     }
