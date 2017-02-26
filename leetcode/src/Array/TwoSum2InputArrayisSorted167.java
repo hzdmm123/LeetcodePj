@@ -1,7 +1,7 @@
 package Array; /**
  * Created by hzdmm  2016/10/21.
  */
-import java.util.*;
+
 public class TwoSum2InputArrayisSorted167 {
     public static int[] twoSum(int[] numbers,int target){
         int i=0;

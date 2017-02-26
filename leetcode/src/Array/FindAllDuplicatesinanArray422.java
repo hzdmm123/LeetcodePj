@@ -1,6 +1,7 @@
 package Array;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by hzdmm on 2016/11/18.

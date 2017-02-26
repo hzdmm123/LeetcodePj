@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LeetcodePj.iml" filepath="$PROJECT_DIR$/LeetcodePj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeInterviewGuide/CodeInterviewGuide.iml" filepath="$PROJECT_DIR$/CodeInterviewGuide/CodeInterviewGuide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InterviewCode.iml" filepath="$PROJECT_DIR$/InterviewCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sort/Sort.iml" filepath="$PROJECT_DIR$/Sort/Sort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/directBAT/directBAT.iml" filepath="$PROJECT_DIR$/directBAT/directBAT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leetcode/leetcode.iml" filepath="$PROJECT_DIR$/leetcode/leetcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sowrdoffer/sowrdoffer.iml" filepath="$PROJECT_DIR$/sowrdoffer/sowrdoffer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />
     </modules>
   </component>
 </project>

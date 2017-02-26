@@ -1,9 +1,6 @@
 package Array;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
 
 /**
  * Created by hzdmm on 2016/10/30.
