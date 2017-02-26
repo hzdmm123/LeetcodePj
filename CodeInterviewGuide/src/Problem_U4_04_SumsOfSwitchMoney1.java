@@ -1,4 +1,4 @@
-/**
+/**能num{1,5,10}          aim=15 求能够用num中的元素组成的在15 的最大种类数
  * Created by hzdmm on 2017/2/26.
  */
 public class Problem_U4_04_SumsOfSwitchMoney1 {
@@ -22,7 +22,7 @@ public class Problem_U4_04_SumsOfSwitchMoney1 {
         if (index==array.length){
             res = aim==0 ?1:0;
         }else {
-            for (int i=0;array[index] * i<=aim;i++) {
+            for (int i=0;array[index] * i<=aim;i++) {//当前的货币不超过aim
                 res += process(array, index + 1, aim - array[index] * i);
             }
         }
