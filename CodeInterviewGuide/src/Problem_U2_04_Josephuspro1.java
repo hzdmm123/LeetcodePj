@@ -18,18 +18,18 @@ public class Problem_U2_04_Josephuspro1 {
         Node last = head;
         while (last.next!=head){
             last = last.next;
-        }
+    }
 
-        int count = 0;
+    int count = 0;
         while (head != last){
-            if (++count==m){
-                last.next = head.next;//断开的地方相连
-                count = 0;
-            }else{
-                last = last.next;//继续往下面数
-            }
-            head = last.next;
+        if (++count==m){
+            last.next = head.next;//断开的地方相连
+            count = 0;
+        }else{
+            last = last.next;//继续往下面数
         }
+        head = last.next;
+    }
         return head;
 
     }

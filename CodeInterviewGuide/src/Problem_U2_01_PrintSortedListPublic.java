@@ -18,16 +18,16 @@ public class Problem_U2_01_PrintSortedListPublic {
 
         while(head1 != null && head2 !=null){//排除列表为空的情况
             if (head1.value < head2.value){
-                head1 = head1.next;
-            }else if (head1.value > head2.value) {
-                head2 = head2.next;//不相等都走下一个
-            }else{
-                System.out.print(head1.value+"");
-                head1 = head1.next;
-                head2 = head2.next;//正常情况下的走势
-            }
-
+            head1 = head1.next;
+        }else if (head1.value > head2.value) {
+            head2 = head2.next;//不相等都走下一个
+        }else{
+            System.out.print(head1.value+"");
+            head1 = head1.next;
+            head2 = head2.next;//正常情况下的走势
         }
+
+    }
         System.out.println();
     }
 
