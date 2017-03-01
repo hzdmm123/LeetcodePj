@@ -21,11 +21,11 @@ public class Problem_U4_04_SumsOfSwitchMoney1 {
         int res = 0;
         if (index==array.length){
             res = aim==0 ?1:0;
-        }else {
-            for (int i=0;array[index] * i<=aim;i++) {//当前的货币不超过aim
-                res += process(array, index + 1, aim - array[index] * i);
-            }
+           }else {
+        for (int i=0;array[index] * i<=aim;i++) {//当前的货币不超过aim
+            res += process(array, index + 1, aim - array[index] * i);
         }
+    }
         return res;
 
     }

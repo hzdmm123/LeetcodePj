@@ -29,7 +29,7 @@ public class Problem_U4_04_SumsOfSwitchMoney2 {
         for (int i=0;array[index]*i<=aim;i++){
             mapValue = map[index+1][aim-array[index]*i];
             if (mapValue!=0){
-                res+=mapValue==-1?0:mapValue;//在map数组中是否记过，计算过就直接机上
+                res+= mapValue==-1 ? 0:mapValue;//在map数组中是否记过，计算过就直接机上
             }else {
                 res += process(array,index+1,aim-array[index]*i,map);
                 }
