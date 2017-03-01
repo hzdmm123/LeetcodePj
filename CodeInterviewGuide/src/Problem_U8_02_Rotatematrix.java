@@ -10,18 +10,18 @@ public class Problem_U8_02_Rotatematrix {
         while (tr<=dr && tc<=dc){
             rotateEdage(matrix,tr++,tc++,dr--,dc--);
         }
-    }
+                }
 
-    public static void rotateEdage(int[][] m, int tr, int tc, int dr, int dc) {
+public static void rotateEdage(int[][] m, int tr, int tc, int dr, int dc) {
         int times = dc-tc;
         int temp ;
         for (int i=0;i!=times;i++){
-            temp = m[tr][tc+i];
-            m[tr][tc+i] = m[dr-i][tc];
-            m[dr-i][tc] = m[dr][dc-i];
-            m[dr][dc-i] = m[tr+i][dc];
-            m[tr+i][dc] = temp;
+        temp = m[tr][tc+i];
+        m[tr][tc+i] = m[dr-i][tc];
+        m[dr-i][tc] = m[dr][dc-i];
+        m[dr][dc-i] = m[tr+i][dc];
+        m[tr+i][dc] = temp;
         }//一边一边转
-    }
+        }
 
-}
+        }
