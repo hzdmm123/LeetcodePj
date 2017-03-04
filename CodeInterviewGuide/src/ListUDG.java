@@ -272,6 +272,7 @@ public class ListUDG {
                 {'C', 'D'},
                 {'E', 'G'},
                 {'F', 'G'}};
+
         ListUDG pG;
 
         // 自定义"图"(输入矩阵队列)

@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CodeInterviewGuide/CodeInterviewGuide.iml" filepath="$PROJECT_DIR$/CodeInterviewGuide/CodeInterviewGuide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CrackTheCodingInterview/CrackTheCodingInterview.iml" filepath="$PROJECT_DIR$/CrackTheCodingInterview/CrackTheCodingInterview.iml" />
       <module fileurl="file://$PROJECT_DIR$/InterviewCode.iml" filepath="$PROJECT_DIR$/InterviewCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA_Cement/JAVA_Cement.iml" filepath="$PROJECT_DIR$/JAVA_Cement/JAVA_Cement.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sort/Sort.iml" filepath="$PROJECT_DIR$/Sort/Sort.iml" />
       <module fileurl="file://$PROJECT_DIR$/directBAT/directBAT.iml" filepath="$PROJECT_DIR$/directBAT/directBAT.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/leetcode.iml" filepath="$PROJECT_DIR$/leetcode/leetcode.iml" />
