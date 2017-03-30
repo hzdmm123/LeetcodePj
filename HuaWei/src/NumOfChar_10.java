@@ -2,6 +2,20 @@ import java.util.Scanner;
 
 /**
  * Created by hzdmm on 2017/3/27.
+ * 编写一个函数，计算字符串中含有的不同字符的个数。字符在ACSII码范围内(0~127)。不在范围内的不作统计。
+
+ 输入描述:
+ 输入N个字符，字符在ACSII码范围内。
+
+
+ 输出描述:
+ 输出范围在(0~127)字符的个数。
+
+ 输入例子:
+ abc
+
+ 输出例子:
+ 3
  */
 public class NumOfChar_10 {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-/**
+/**空瓶换可乐
  * Created by hzdmm on 2017/3/28.
  */
 public class CokeBottle {
