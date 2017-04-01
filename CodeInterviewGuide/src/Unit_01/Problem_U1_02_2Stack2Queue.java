@@ -46,7 +46,5 @@ public class Problem_U1_02_2Stack2Queue {
         System.out.println(tsq.poll());
         System.out.println(tsq.peek());
         tsq.add(5);
-
-
     }
 }
