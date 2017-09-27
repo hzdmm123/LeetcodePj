@@ -9,4 +9,11 @@ public class Swap {
             a=a-b;
         }
     }
+    static int[] arr = new int[5];
+    public static void main(String[] args) {
+        int[] brr = new int[5];
+        System.out.println(arr[0]);
+        System.out.println(brr[0]);
+
+    }
 }

@@ -55,7 +55,7 @@ public class ChangeMoney {
             for (int i=0;changes[index]*i<=x;i++){
                 mapValue = map[index+1][x-changes[index]*i];
                 if (mapValue!=0){
-                    res+=mapValue == -1 ?1:0;
+                    res+=mapValue == -1 ?0:mapValue;
                 }else {
                     res+=help2(changes,index+1,x-changes[index]*i,map);
                 }
@@ -70,15 +70,25 @@ public class ChangeMoney {
      * 动态规划方法
      */
 
-//    private int countWays3(int[] changes, int aim) {
-//        int[][] dp = new int[changes.length][aim+1];
-//        for (int i=0;i<changes.length;i++){
-//            dp[i][0]=1;
-//        }
-//
-//        for (int i=0;changes[0]*i<=aim;i++){
-//            dp[0][changes[0]*i]=1;
-//        }
-//    }
+    private int countWays3(int[] changes, int aim) {
+        int[][] dp = new int[changes.length][aim+1];
+        for (int i=0;i<changes.length;i++){
+            dp[i][0]=1;
+        }
+
+        for (int i=0;changes[0]*i<=aim;i++){
+            dp[0][changes[0]*i]=1;
+        }
+        int num=0;
+        for (int i=1;i<changes.length;i++){
+            for (int j=1;j<=aim;j++){
+                for (int k=0;j-changes[i]*k>0;k++){
+                    num+=dp[i-1][j-changes[i]*k];//用1-k张的i货币的种类
+                }
+                dp[i][j]= num;
+            }
+        }
+        return dp[changes.length-1][aim];
+    }
 
 }

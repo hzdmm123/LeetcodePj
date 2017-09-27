@@ -5,8 +5,25 @@ package com.nowcode.select;
  */
 public class demo1 {
     public static void main(String[] args) {
-        int i = 5;
-        int j = 10;
-        System.out.println(i + ~j);
+        //testOpereator();
+        System.out.println(x);
     }
+
+    public static void testOpereator(){
+        int i=10;
+        System.out.println(~i);
+    }
+    static  int x = 10;
+    static {
+        x+=5;
+    }
+    static {
+        x/=3;
+    }
+
+/*    public static void main(String[] args) {
+        System.out.println();
+    }*/
+
+
 }
