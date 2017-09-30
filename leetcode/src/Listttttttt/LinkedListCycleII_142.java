@@ -20,9 +20,10 @@ public class LinkedListCycleII_142 {
         while (fast!=null&&fast.next!=null){
             fast = fast.next.next;
             slow = slow.next;
-            if (fast==slow){
-                fast = head;
-                while (fast!=slow){
+            if (fast==slow){//先找到相交
+                fast = head;//fast重置回起点
+                while (fast!=slow){//slow离相交点X 起点离交点为a
+                    //slow=s 和 fast=ns a+x=s   2s=s+nr
                     fast=fast.next;
                     slow=slow.next;
                 }

@@ -1,4 +1,6 @@
+import java.util.LinkedHashSet;
 import java.util.Stack;
+import java.util.TreeSet;
 
 /**
  * Created by hzdmm on 2017/3/9.
@@ -39,6 +41,5 @@ public class TwoStackImpQuene {
             return stackPop.peek();
 
         }
-
     }
 }

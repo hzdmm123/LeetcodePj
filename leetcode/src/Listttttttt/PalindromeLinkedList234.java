@@ -6,7 +6,7 @@ package Listttttttt;
  * determine if it is a palindrome.
  * 给定一个单链表,判断是不是一个回文
  * 基本思路:1.用栈  因为空间复杂度的要求 pass
- * 2.快慢指针  找到中间节点  反转前半部  最后判断
+ * 2.快慢指针  找到中间节点  反转半部  最后判断
  */
 public class PalindromeLinkedList234 {
     public class ListNode {

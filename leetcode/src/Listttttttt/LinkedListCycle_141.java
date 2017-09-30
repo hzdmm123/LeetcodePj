@@ -29,10 +29,9 @@ public class LinkedListCycle_141 {
             fast=fast.next.next;
             slow=slow.next;
             if (fast==slow){
-                return true;
+                return true;//如果存在环,两个指针一快一慢肯定会相交
             }
         }
         return false;
     }
-
 }
