@@ -2,35 +2,44 @@ package DpTest;
 
 /**
  * Created by hzdmm on 2017/9/7.
+ * 最长上升连续子序列
  */
 public class longestIncreasingContinuousSubsequenceTest {
     public static int longestIncreasingContinuousSubsequence(int[] A) {
-        // write your code here
-        int[] dp= new int[A.length];
-        int[] dp2 = new int[A.length];
-        int maxLen= 0;
-        int maxLen2= 0;
-        for (int i=0; i<dp.length; i++) {
-            dp[i]=1;
-            dp2[i]=1;
-            for (int j=0; j<i; j++ ) {
-                if (A[i]>A[j]) {
-                    dp[i]= Math.max(dp[i],dp[j]+1);
+        if (A==null||A.length==0){
+            return 0;
+        }
+
+        if (A.length==1){
+            return 1;
+        }
+
+        int res = 1;
+        int[] l2r = new int[A.length];
+        int[] r2l = new int[A.length];
+        l2r[0]=1;
+        for (int i=1;i<A.length;i++){
+            if (A[i]>A[i-1]){
+                l2r[i]=l2r[i-1]+1;
+                if (l2r[i]>res){
+                    res = l2r[i];
                 }
-            }
-            for (int j=0; j<i; j++) {
-                if (A[i]<A[j]) {
-                    dp2[i]=Math.max(dp2[i],dp2[j]+1);
-                }
-            }
-            if (dp2[i]>maxLen2) {
-                maxLen2=dp2[i];
-            }
-            if (dp[i]>maxLen) {
-                maxLen=dp[i];
+            }else {
+                l2r[i]=1;
             }
         }
-        return maxLen>maxLen2 ? maxLen : maxLen2;
+        r2l[A.length-1]=1;
+        for (int i=A.length-2;i>=0;i--){
+            if (A[i]>A[i+1]){
+                r2l[i]=r2l[i+1]+1;
+                if (r2l[i]>res){
+                    res=r2l[i];
+                }
+            }else {
+                r2l[i]=1;
+            }
+        }
+        return res;
     }
 
     public static void main(String[] args) {
