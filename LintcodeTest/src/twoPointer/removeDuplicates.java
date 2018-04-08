@@ -10,6 +10,8 @@ package twoPointer;
  给出数组A =[1,1,2]，你的函数应该返回长度2，此时A=[1,2]。
  */
 public class removeDuplicates {
+
+
     public int removeDuplicates(int[] nums) {
         if (nums==null||nums.length<=1){
             return nums.length;
@@ -24,3 +26,4 @@ public class removeDuplicates {
         return index;
     }
 }
+
